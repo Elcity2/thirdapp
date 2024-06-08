@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAILS ABOUT YOURSELF"
+        android:textStyle="bold|italic"
+        android:layout_marginVertical="10dp"
+        android:textSize="30sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="enter your name"
+    android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/enterYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name "/>
+
+</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your number"/>
+
+        <EditText
+        android:id="@+id/enterYourNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Phone number "
+        android:textSize="20sp"
+        android:maxLength="10"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:nextFocusDown="@id/enterYourBirthDate"/>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your birth date"/>
+
+    <EditText
+        android:id="@+id/enterYourBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth: "
+        android:inputType="date"
+        android:maxLength="2"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you studying?"/>.
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"/>
+        
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no"/>
+    </RadioGroup>
+        
+        <EditText
+            android:id="@+id/college"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your college name"
+            android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check"/>
+
+
+</LinearLayout>
